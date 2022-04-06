@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header.js";
+import Bar from "./components/Bar.js";
+import Applications from "./components/Applications.js";
+import Modal from "./components/Modal.js";
+import { useState } from 'react';
 
 function App() {
+  const [modalState, setModalState] = useState(false);
+  let modal = <Modal setModalState={setModalState} />
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main-container">
+      <Header setModalState={setModalState} />
+      <Applications />
+      <Bar />
+      <div>{modalState && modal}</div>
+    </main>
   );
 }
 

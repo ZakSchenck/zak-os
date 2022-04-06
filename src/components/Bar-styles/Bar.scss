@@ -1,0 +1,30 @@
+.bar-section {
+    height: 50px;
+    width: 450px;
+    background-color: #301454;
+    border: 1px solid #7231c7;
+    opacity: .8;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    img {
+        margin-left: 25px;
+        margin-right: 25px;
+        height: 44px;
+        width: auto;
+        filter: brightness(0) invert(1);
+        &:hover {
+            cursor: pointer;
+            border: 3px solid purple;
+            border-radius: 50%;
+        }
+    }
+}

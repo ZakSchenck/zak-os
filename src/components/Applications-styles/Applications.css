@@ -1,0 +1,50 @@
+.app-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  grid-gap: 15px;
+  max-width: 150px;
+}
+
+.app-section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.app-section div img {
+  width: 80px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.app-section div img:hover {
+  padding: 4px;
+  background-color: #501494;
+  cursor: pointer;
+  border: 2px solid #8065a0;
+}
+
+.app-section div p {
+  font-weight: 600;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=Applications.css.map */
